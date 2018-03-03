@@ -1,0 +1,26 @@
+{"1.1.0",
+[{<<"cache">>,{pkg,<<"cache">>,<<"2.2.0">>},0},
+ {<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},1},
+ {<<"lager">>,{pkg,<<"lager">>,<<"3.6.1">>},0},
+ {<<"mysql">>,
+  {git,"https://github.com/mysql-otp/mysql-otp.git",
+       {ref,"5ad838fd1cfe11f0a7eb4e25d94f438c19c62630"}},
+  1},
+ {<<"mysql_poolboy">>,
+  {git,"https://github.com/mysql-otp/mysql-otp-poolboy",
+       {ref,"46f2325fe8e766a5446653c23a55d9e9537e0faf"}},
+  0},
+ {<<"poolboy">>,
+  {git,"https://github.com/devinus/poolboy.git",
+       {ref,"3bb48a893ff5598f7c73731ac17545206d259fac"}},
+  1},
+ {<<"spt_crate">>,
+  {git,"https://github.com/indie21/spt_crate.git",
+       {ref,"3caa5adccdc9a489e9484ff94f76ca6c8d64d613"}},
+  0}]}.
+[
+{pkg_hash,[
+ {<<"cache">>, <<"3C11DBF4CD8FCD5787C95A5FB2A04038E3729CFCA0386016EEA8C953AB48A5AB">>},
+ {<<"goldrush">>, <<"F06E5D5F1277DA5C413E84D5A2924174182FB108DABB39D5EC548B27424CD106">>},
+ {<<"lager">>, <<"9D29C5FF7F926D25ECD9899990867C9152DCF34EEE65BAC8EC0DFC0D16A26E0C">>}]}
+].

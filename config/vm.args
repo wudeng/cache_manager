@@ -1,0 +1,6 @@
+-sname cache_manager
+
+-setcookie cache_manager_cookie
+
++K true
++A30

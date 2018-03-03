@@ -1,0 +1,55 @@
+-ifndef(TABLE_H_).
+-define(TABLE_H_, 1).
+
+-record(common_drop, {sign_id = 0,count = 0,time = 0,other = ""}).
+-record(family, {family_id = 0,family_name = "",createid = 0,level = 0,exp = 0,allpower = 0,task = "",member = "",wining = 0,max_wining = 0,rewarded = "",wons = 0,joins = 0,is_enroll = 0}).
+-record(global_value, {id = 0,val}).
+-record(mail, {id = 0,receiver = 0,base_id = 0,attach = "",params = "",expire = 0}).
+-record(player_activity, {id = 0,activity = 0,rewarded = "",finished}).
+-record(player_beast_soul_skill, {player_id = 0,activate_list = "",times = 0}).
+-record(player_brave_troops, {player_id = 0,stage = 0,profit = 0,time = 0}).
+-record(player_counter, {player_id = 0,counter}).
+-record(player_currency, {player_id = 0,gold = 0,diamond = 0,cable = 0,frame = 0,degree = 0,treasure_map = 0,knife = 0,endurance = 0,pokedex = 0}).
+-record(player_daily_sign_in, {player_id = 0,signed_list = ""}).
+-record(player_dress, {player_id = 0,current_dress_id = 0,dress_list}).
+-record(player_drop, {player_id = 0,drop_list,sign_list}).
+-record(player_eight_diagram, {player_id = 0,max_id = 0,enter_count = 0}).
+-record(player_equip, {index = 0,player_id = 0,equip = "",strengthen_level = 0,strengthen_fail_times = 0,opening_level = 0,gemstone,other = ""}).
+-record(player_family, {player_id = 0,family_id = 0,family_name = "",family_task = "",job = 0,box = 0,refresh_times = 0,over_times = 0,sign = 0}).
+-record(player_foundation, {player_id = 0,buy_state = 0,rewarded = "",level_package = "",package = ""}).
+-record(player_friend, {player_id = 0,friend_list = "",black_list = "",apply_list = "",enemy_list,friend_state_list,daily_receive_count = 0,blog_list = "",daily_like_count = 0,daily_be_liked_count = 0,daily_be_liked_draw_reward_count = 0}).
+-record(player_golden_eggs, {player_id = 0,multiple_list = "",daily_times = 0}).
+-record(player_gossip, {player_id = 0,activate_list = "",type = 0,value = 0}).
+-record(player_hero, {player_id = 0,victory = 0,defeated = 0,max_streak = 0,cur_streak = 0,score = 0,score_time = 0,rewarded = 0,times = 0}).
+-record(player_info, {id = 0,account = "",uid = "",server_id = 0,name = "",icon = "",role_type = 0,level = 0,exp = 0,pay_lv = 0,pay_count = 0,vip_tag = 0,town_id = 0,map_id = 0,point = "",map_unique_flag = "",refresh_time = 0,is_online = 0,login_ip = "",login_time = 0,logout_time = 0,offline_time = 0,create_time = 0,forbid_start_time_list,last_rest_time = 0,show_fighting = 0,mount_state = 0,hp = 100,evil = 0,redname_state = 0,battle_mode = 0,divide_times = 0,fighting_his = 0,prefix_times = 1,buffs = "[]",first_state}).
+-record(player_item, {player_id = 0,index = 0,list,bag_size = 0,repertory_size = 0,item_group,cell_time = 0,timer = 0,repertory}).
+-record(player_mail, {player_id = 0,mails}).
+-record(player_mall, {player_id = 0,buy_day,buy_week,buy_history_limit,buy_recharge = ""}).
+-record(player_mech, {player_id = 0,mech_id = 0,level = 0,exp = 0,make_times = 0,lucky = 0,get_lucky = 0,dan_use = 0,exp_dan = 0,exp_dan_expire = 0}).
+-record(player_monthcard, {player_id = 0,had_card = ""}).
+-record(player_mount, {player_id = 0,mount_id = 0,growth = 0,dan_use = 0,fail_count = 0,no_fail_count = 0,no_crit_count = 0,status = 0}).
+-record(player_online_reward, {player_id = 0,refresh_time = 0,next_time = 0,times = 0,get_times = 0}).
+-record(player_pagoda, {player_id = 0,enter_count = 0,buy_count = 0}).
+-record(player_payinfo, {order_id = 0,player_id = 0,account = "",buy_time = 0,money = 0,order_no = 0}).
+-record(player_poison, {player_id = 0,upgrade_list = "0"}).
+-record(player_pokedex, {player_id = 0,level = 0,fighting = 0,buy_fighting = 0,refresh = 0,orange = 0,purple = 0,activate_list,monster_info = ""}).
+-record(player_refine_body, {player_id = 0,upgrade_list = "0",break_level = 0}).
+-record(player_role, {account = "",role_index = 0,player_id = 0,vip_level = 0,body_id = 0,weapon_id = 0,weapon_item = 0,weapon_level = 0,equip_level = 0}).
+-record(player_sale, {player_id = 0,max_num = 0,sale_list = ""}).
+-record(player_settings, {player_id = 0,auto_decompose = 0,auto_decompose2,auto_revive = 0,left_offline_time = 0,used_offline_time = 0,offline_exp_up = 0,offline_exp_time = 0}).
+-record(player_seven_days, {player_id = 0,receive_list}).
+-record(player_shikar, {player_id = 0,buy_count = 0,refresh_times = 0,attack_times = 0,monster_id = 0,monster_max = 0,monster_hp = 0}).
+-record(player_silverfb, {id = 0,name = "",myrecord = 0,surplus = 0,buy = 0}).
+-record(player_skill, {player_id = 0,skill_list = "",skill_high_list,other = ""}).
+-record(player_talisman, {player_id = 0,talisman_list = "",times = 0}).
+-record(player_task, {player_id = 0,major_task,branch_task,round_task,guide_task,treasure_task,done_major_task,done_branch_task,done_round_task,done_guide_task,round_times = 0,rounds = 0,round_rule_id = 0,achieve_value = 0,achieve_reward = "",treasure_active_state = 0,treasure_pos}).
+-record(player_thousand, {player_id = 0,layer = 0,time = 0,state = 0}).
+-record(player_title, {player_id = 0,current_title_ids = "",titles}).
+-record(player_title2, {player_id = 0,current_title2 = 0,values}).
+-record(player_weapon_soul, {player_id = 0,weapon_soul_info,weapon_soul_skill,weapon_soul_condition_values}).
+-record(player_wearing, {player_id = 0,weapon = "",gloves = "",pants = "",ring = "",helmet = "",dress = "",shoes = "",necklace = "",opening_times_old = 0,opening_times = 0,forged_times_sun = 0,forged_times_moon = 0,recast_times = 0}).
+-record(player_wing, {player_id = 0,id = 0,grwth = 0,lucky = 0,five_times = 0,two_times = 0,up_times = 0,get_lucky = 0}).
+-record(red_envelope, {id = 0,owner_id = 0,total = 0,currency_type = 0,already = 0,count = 0,already_list,msg = "",endtime = 0,idlist}).
+-record(sale_info, {id = 0,player_id = 0,item = "",price = 0,endtime = 0,over_state}).
+
+-endif.
